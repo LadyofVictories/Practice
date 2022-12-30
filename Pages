@@ -1,0 +1,266 @@
+
+  
+import random
+a = random.sample(range(1000),5)
+print (a)
+
+
+import random
+a= random.sample(range(50,100),5)
+b= random.sample(range(50,100),8)
+result = [i for i in a if """
+      A = [9001, 9055, 8001, 8055, 6001, 6055, 5001, 5055, 8066, 8088, 6088]
+LessFnums=[]
+LessNnums=[]
+B = int(input("Enter lower limit in Thousands"))
+for num in A:
+  if num<B:
+    LessFnums.append(num)
+    LessFnums.sort
+print(LessFnums)
+n = int(input("Enter a number in thousands"))
+for num in A:
+  if num>n:
+    LessFnums.append(num)
+    LessFnums.sort
+print(LessFnums)
+A = int (input("Enter a Number You want the Divisors of, printed"))
+Divisors=[]
+B=1
+while B<50:
+    
+    if A%B==0:
+        Divisors.append(B) 
+        Divisors.sort
+    B=B+1
+print(Divisors)
+
+Enter = int(input("Enter a number you want the divisors of"))
+listRange = list(range(1,Enter+1))
+Divisors = []
+for num in listRange:
+  if Enter%num==0:
+    Divisors.append(num)
+    Divisors.sort
+print(Divisors)
+
+
+a=[1, 2, 3, 4, 5, 6]
+b=[1, 2, 25, 26, 27, 28]
+c=[if num/numbers==1 for num, numbers in (a,b)]
+print(c)
+
+
+a=[1, 2, 3, 4, 5, 6] 
+b=[1, 2, 98]
+intersect = [i for i in a if i in b]
+print(intersect)
+
+# Code for the function intersect
+# list overlap
+
+def intersect(list1, list2):
+  intersect=[]
+  for i in list1:
+    if i in list2:
+      intersect.append(i)
+  print(intersect)
+
+a=[1, 2, 3, 4, 5, 6] 
+b=[1, 2, 21, 98]
+intersect(a,b)
+
+# https://www.pythonpool.com/python-list-intersection/
+
+
+a=[1, 2, 3, 4, 5, 6] 
+b=[1, 2, 21, 98]
+c=[]
+for i in a:
+  if i in b:
+    c.append(i)
+print(c)
+
+
+#String Lists
+# Ask the user for string and print out whether the string is a palindrome or not
+
+a = input("Enter a Word to know whether it is Plaindrome or not")
+a=str(a)
+reverse = a[-1::-1]
+print(reverse)
+if a==reverse:
+  print("You have entered a Palindrome")
+
+else:
+  print("You haven't entered a Palindrome")
+
+
+a = str(input("Enter a word to know whether it is a Plaindrome"))
+reverse = a[-1::-1]
+print (reverse)
+if a==reverse:
+  print("You have entered a Palindrome")
+
+else:
+  print("The word you enetred is not a Palindrome")
+  
+a = [2101, 2202, 2303, 2404, 2505, 2606, 2707, 2808, 2909]
+Odd=[]
+for num in a:
+  if num%2!=0:
+     Odd.append(num)
+print(Odd)
+  
+
+user1 = input("What is your name?")
+user2 = input("And your name?")
+user1_answer = input("%s, do you want to choose rock, paper or scissors?" % user1)
+user2_answer = input("%s, do you want to choose rock, paper or scissors?" % user2)
+
+def compare(u1,u2):
+  if u1==u2:
+    return("It is a tie!")
+  elif u1=='rock':
+    if u2 == 'scissors':
+       return("Rock wins!")
+    else:
+       return("Paper wins!")
+  elif u1=='scissors':
+     if u2 == 'paper':
+       return("Scissors win!")
+     else:
+       return("Rock wins!")
+  elif u1=='paper':
+    if u2=='rock':
+      return ("Paper wins!")
+    else:
+      return ("Scissors win!")
+  else:
+    return("Invalid output. You have not entered rock, paper or scissors, try again")
+    sys.exit()
+print (compare(user1_answer, user2_answer))
+
+
+
+
+import random
+
+rd= random.randint(1,9)
+guess=0
+c=0
+while guess !=rd and guess != "exit":
+  guess=input("Enter your guess for the number between 1 and 9:")
+  if guess=="exit":
+    break
+  guess=int(guess)
+  c+=1
+  if guess<rd:
+     print("Too low")
+  elif guess>rd:
+     print("Too high")
+  else:
+     print("You guessed it right")
+     print("it took only", c, "turns for you to get it right")
+    
+
+i in b]
+print('a=' ,a, '\nb=',b, '\nResult=',result)
+#print(b) 
+#print(result)
+
+
+a = int (input('Enter a number to know whether it is a Prime Number'))
+if a>1:
+  for i in range(2,a):
+    if a%i==0:
+      print(a," is not a Prime Number")
+    else:
+      print(a, " is a Prime Number")
+    break
+
+
+
+import random
+a = random.sample(range(111),5)
+b=[]
+c=0
+d=0
+for num in a:
+  c=a[0]
+  d=a[-1]
+  b.append(c)
+  b.append(d)
+  break
+print (b)
+
+
+
+import random
+a = random.sample(range(111),5)
+b = [a[0],a[-1]]
+print (a,'\n',b)
+
+
+a = int(input ("Enter the number of Fibonacci Sequence you want to generate"))
+b=0
+c=1
+count = 0
+if a<=0:
+  print("Please enter a positive integer")
+elif a==1:
+  print("Fibonacci sequence upto", a, ":",b)
+else:
+  print("Fibonacci Sequence : ")
+  while count<a:
+    print(b)
+    d=b+c
+    b=c
+    c=d
+    count +=1
+    
+
+
+
+a= int(input("Please enter the number of Fibonacci Sequence you want to generate"))
+b=0
+c=1
+Count=0
+
+
+
+
+def gen_fib():
+  count=int(input("How many Fibonacci numbers would you like to generate?"))
+  i=1
+  if count==0:
+    fib=[]
+
+  elif count==1:
+    fib=[1]
+  elif count==2:
+    fib=[1,1]
+  elif count>2:
+    fib=[1,1]
+    while i<(count-1):
+      fib.append(fib[i]+fib[i-1])
+      i +=1
+      
+  return fib
+
+
+
+def dedup(x):
+  y=[]
+  for i in x:
+    if i not in y:
+      y.append(i)
+  return y
+
+
+
+
+def dedup(x):
+  return list(set(x))
+
+  """
