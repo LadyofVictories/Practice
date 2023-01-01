@@ -1,5 +1,5 @@
 
-  
+"""  
 import random
 a = random.sample(range(1000),5)
 print (a)
@@ -264,3 +264,51 @@ def dedup(x):
   return list(set(x))
 
   """
+
+def displaymenu():
+print("Command Menu")
+print("List : List all Movies")
+print("Add: Add a Movie")
+print("Del: Delete  movie")
+print("Exit: Exit Program")
+print()
+
+Def list(movielist):
+for i, movie in enumerate (movielist, start=1)
+print(f"{i}.{movie}")
+print()
+
+def add (movielist)
+movie = input("Name:")
+movielist.append(movie)
+print(f"{movie} was added.\n")
+
+def delete(movielist):
+number=int(input("Number: "))
+if number <1 or number > len(movielist):
+     print("Invalid Movie Number.\n")
+else:
+     movie = movielist.pop(number-1)
+     print(f"{movie} was Deleted.\n")
+     
+def main():
+     movielist =["How Do you Know", "Far from Madding Crowd", "Avengers Assemble")
+     display menu()
+     
+     while true:
+          command= input("Command: ")
+          if command.lower() == "list":
+             list(movielist)
+          elif command.lower() == "add":
+             add(movielist()
+          elif command.lower() == "del":
+             delete(movielist
+          elif command.lower() == "exit":
+             break
+          else:
+             print("Not a Valid Command. Please Try Again. \n")
+             
+     print("Later")
+ if __name__ =="__main__":
+     main()
+      
